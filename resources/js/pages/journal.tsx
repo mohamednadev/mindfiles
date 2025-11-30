@@ -22,10 +22,10 @@ const Wysiwyg = lazy(async () => {
     default: ({ value, onChange, focused }: { value: string; onChange: (val: string) => void; focused: boolean }) => (
       <mod.EditorProvider>
         {focused && (
-          <div className="flex gap-4 p-2">
-            <mod.BtnBold className="text-gray-800 dark:text-gray-100" />
-            <mod.BtnItalic className="text-gray-800 dark:text-gray-100" />
-            <mod.BtnUnderline className="text-gray-800 dark:text-gray-100" />
+          <div className="flex gap-4 p-2 border-b mb-2">
+            <mod.BtnBold className="" />
+            <mod.BtnItalic className="" />
+            <mod.BtnUnderline className="" />
           </div>
         )}
         <mod.Editor
@@ -95,7 +95,7 @@ export default function JournalPage() {
 
   return (
     <AppLayout breadcrumbs={breadcrumbs}>
-      <div className="w-full px-6 mx-auto py-10 min-h-screen duration-300">
+      <div className="w-full p-6 mx-auto min-h-screen duration-300">
         <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">My Journal</h2>
         <Head title="My Journal" />
 

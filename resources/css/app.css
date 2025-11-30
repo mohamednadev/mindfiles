@@ -141,3 +141,7 @@
         @apply bg-background text-foreground;
     }
 }
+
+.rsw-editor {
+    border: none !important;
+}

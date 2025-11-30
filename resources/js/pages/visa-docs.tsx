@@ -285,7 +285,7 @@ const handleBulkSetDone = () => {
       )}
 
       {/* DataTable */}
-      <div className="w-full px-6 mx-auto py-10">
+      <div className="w-full p-6 mx-auto">
         <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">My Visa Documents</h2>
 
         <DataTable
