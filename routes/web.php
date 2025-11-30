@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\JournalController;
 use App\Http\Controllers\VisaDocController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -56,6 +57,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/tasks/selected/in-progress', [TaskController::class, 'setSelectedInProgress'])->name('tasks.setSelectedIn_progress');
     Route::post('/tasks/selected/pending', [TaskController::class, 'setSelectedPending'])->name('tasks.setSelectedPending');
 
+    // Main journal page (editor + carousel)
+    Route::get('/journal', [JournalController::class, 'index'])->name('journals.index');
+    // Create a new page
+    Route::post('/journal', [JournalController::class, 'store'])->name('journals.store');
+    // Update a page (title + content)
+    Route::put('/journal/{journal}', [JournalController::class, 'update'])->name('journals.update');
+    // Delete a page
+    Route::delete('/journal/{journal}', [JournalController::class, 'destroy'])->name('journals.destroy');
 });
 
 require __DIR__.'/settings.php';

@@ -8,37 +8,55 @@ import { Folder, ChartBar, ListChecks, Star, PencilLine, Lightbulb } from 'lucid
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
+    // PLATFORM
     {
         title: 'Analytics',
         href: '/dashboard',
         icon: ChartBar,
+        group: 'Platform',
     },
+    {
+        title: 'Notifications',
+        href: '/notifications',
+        icon: Lightbulb, // change to a bell if you want
+        group: 'Platform',
+    },
+
+    // TASKS
     {
         title: 'Daily Tasks',
         href: '/tasks',
         icon: ListChecks,
+        group: 'Tasks',
     },
     {
         title: 'Awakening Tasks',
         href: '/awakening-tasks',
         icon: Star,
+        group: 'Tasks',
     },
+
+    // DOCUMENTS
     {
         title: 'Journal',
         href: '/journal',
         icon: PencilLine,
+        group: 'Documents',
     },
     {
         title: 'Philosophy',
         href: '/philosophy',
         icon: Lightbulb,
+        group: 'Documents',
     },
     {
         title: 'Visa Documents',
         href: '/visa-docs',
         icon: Folder,
+        group: 'Documents',
     },
 ];
+
 
 
 
