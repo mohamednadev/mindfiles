@@ -28,7 +28,8 @@ const Editor = lazy(async () => {
           <mod.Editor
             value={value}
             onChange={handleChange}
-            className="w-full min-h-[200px] p-3 border border-primary rounded-md text-black dark:text-white"
+            className="w-full min-h-[200px] p-3 border border-input rounded-md text-black dark:text-white"
+            placeholder="Your amazing text"
           />
           <div className="text-sm mt-2">
             {value.length}/2500 characters

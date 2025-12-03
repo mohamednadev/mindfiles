@@ -40,7 +40,7 @@ const Page = forwardRef<HTMLDivElement, any>(({ page }, ref) => {
                     {page.title}
                 </h2>
                 <div
-                    className="whitespace-pre-wrap leading-relaxed flex-1 overflow-auto text-xs dark:text-black text-white"
+                    className="whitespace-pre-wrap leading-relaxed flex-1 overflow-auto hide-scrollbar text-xs dark:text-black text-white"
                     dangerouslySetInnerHTML={{ __html: page.content }}
                 />
                 <div className="text-sm dark:text-black text-white mt-4 text-right border-t pt-2">
