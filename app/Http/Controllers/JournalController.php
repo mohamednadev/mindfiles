@@ -13,8 +13,8 @@ class JournalController extends Controller
     {
         return Inertia::render('journal', [
             'pages' => Journal::where('user_id', Auth::id())
-                ->orderBy('created_at')
-                ->paginate(1),
+                ->orderBy('id', 'asc')
+                ->get(),
         ]);
     }
 

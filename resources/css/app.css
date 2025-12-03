@@ -145,3 +145,18 @@
 .rsw-editor {
     border: none !important;
 }
+
+.rsw-btn[data-active=true] {
+    border-radius: 4px !important;
+    color: var(--sidebar) !important;
+}
+
+.rsw-btn:hover {
+    border-radius: 4px !important;
+    color: var(--sidebar) !important;
+}
+
+.rsw-btn {
+    color: var(--primary) !important;
+}
+
